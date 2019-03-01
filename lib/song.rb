@@ -43,6 +43,7 @@ def self.alphabetical
 self.all.each do |song|
   sorted << song.name 
 end
+sorted.sort 
 
   def self.all
     @@all
