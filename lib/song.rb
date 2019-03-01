@@ -45,7 +45,7 @@ end
 def self.new_from_filename(inputted_string)
   splitted = inputted_string.split(" - ")
   inputted_artist = splitted[0]
-  inputted_song = splitted[1].delete "".mp3"""
+  inputted_song = splitted[1].delete "".mp3""
   added_song = self.new_by_name(inputted_song)
   added_song.artist_name = inputted_artist
   added_song
