@@ -20,8 +20,11 @@ new_song.name = "#{inputted_name}"
 new_song
 end 
 
-def self.create_by_name
-  
+def self.create_by_name(inputted_name)
+  new_song = self.new_by_name(inputted_name)
+  new_song.save
+end
+
   def self.all
     @@all
   end
