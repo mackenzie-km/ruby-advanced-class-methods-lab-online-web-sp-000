@@ -40,7 +40,7 @@ end
 
 def self.alphabetical
 sorted = []
-  
+self.all.sort 
 self.all.each do |song|
   pre_sort << song.name 
 end
