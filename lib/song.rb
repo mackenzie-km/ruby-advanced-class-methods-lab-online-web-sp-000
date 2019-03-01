@@ -43,7 +43,7 @@ self.all.sort_by{|song| song.name}
 end 
 
 def self.new_from_filename(inputted_string)
-  
+  inputted_string.split
 end
 
   def self.all
