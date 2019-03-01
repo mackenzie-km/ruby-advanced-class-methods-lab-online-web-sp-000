@@ -26,6 +26,10 @@ def self.create_by_name(inputted_name)
   new_song
 end
 
+def self.find_by_name(desired_song)
+  
+end
+
   def self.all
     @@all
   end
