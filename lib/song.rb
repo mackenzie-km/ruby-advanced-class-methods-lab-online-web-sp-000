@@ -43,7 +43,9 @@ self.all.sort_by{|song| song.name}
 end 
 
 def self.new_from_filename(inputted_string)
-  inputted_string.split(" - ")
+  splitted = inputted_string.split(" - ")
+  artist_name = splitted[0]
+  song_name = splitted[1]
 end
 
   def self.all
