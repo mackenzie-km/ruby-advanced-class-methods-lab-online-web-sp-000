@@ -39,7 +39,9 @@ def self.find_or_create_by_name(desired_song)
 end
 
 def self.alphabetical
-self.all.sort
+  sorted = []
+self.all.each do |song|
+  sorted << song.name 
 end
 
   def self.all
