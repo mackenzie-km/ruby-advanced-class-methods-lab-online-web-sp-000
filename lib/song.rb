@@ -45,8 +45,11 @@ end
 def self.new_from_filename(inputted_string)
   inputted_string.delete ".mp3"
   splitted = inputted_string.split(" - ")
-  artist_name = splitted[0]
-  song_name = splitted[1]
+  inputted_artist = splitted[0]
+  inputted_song = splitted[1]
+  added_song = self.new_by_name(inputted_song)
+  added_song.artist_name = inputted_artist
+  added_song
 end
 
   def self.all
