@@ -38,6 +38,11 @@ def self.find_or_create_by_name(desired_song)
   end 
 end
 
+def self.alphabetical
+  self.all.each do |song|
+    song.name 
+end
+
   def self.all
     @@all
   end
