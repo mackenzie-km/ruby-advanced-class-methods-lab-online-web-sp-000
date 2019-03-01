@@ -23,7 +23,6 @@ end
 def self.create_by_name(inputted_name)
   new_song = self.new_by_name(inputted_name)
   new_song.save
-  self.all 
 end
 
   def self.all
