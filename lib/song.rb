@@ -47,7 +47,7 @@ self.all.each do |song|
 end
 
 pre_sort.sort.each do |song|
-  sorted << self.find_by_name(song)
+  sorted << self.find_by_name(song.name)
 end
 sorted
 end 
