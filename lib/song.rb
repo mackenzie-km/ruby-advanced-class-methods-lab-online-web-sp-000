@@ -40,9 +40,7 @@ end
 
 def self.alphabetical
  sorted = []
- self.all.sort { |song|
-    song.name 
-  }
+ self.all.sort { |a, b| a <=> b }
   sorted 
 end
 
