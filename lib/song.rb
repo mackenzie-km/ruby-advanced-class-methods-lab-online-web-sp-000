@@ -40,15 +40,7 @@ end
 
 def self.alphabetical
 sorted = []
-self.all.sort_by{|song| song.name 
-self.all.each do |song|
-  pre_sort << song.name 
-end
-
-pre_sort.sort.each do |song|
-  sorted << self.find_by_name(song)
-end
-sorted
+self.all.sort_by{|song| song.name}
 end 
 
   def self.all
